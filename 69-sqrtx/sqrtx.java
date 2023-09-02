@@ -7,10 +7,10 @@ class Solution {
             long mid = low + (high - low)/2;
             
             if(mid * mid <= (long)x){
-                low = (int)mid + 1;
+                low = (int)(mid + 1);
             }
             else{
-                high = (int)mid - 1;
+                high = (int)(mid - 1);
             }
         }
         return high;
